@@ -6,21 +6,17 @@ const DynamicBooks= async(props)=>{
     console.log(response)
     return(
         <>
-        <h1>Dynamic Books</h1>
+        <div className="text-center mt-11 font-extrabold text-[25px]">
+        <h1 className="text-red-600">Dynamic Books DATA</h1>
 
 <h1>{response.name}</h1>
-<h1>{response.id}</h1>
+<h1> id:{response.id}</h1>
 <h1>{response.author}</h1>
 <h1>price{response.price}</h1>
+        </div>
+      
 
-        {/* {response.map((item)=>{
-                return(
-                <>
-                <h1>{item.name}</h1>
-                </>
-                )
-            })
-        } */}
+     
         </>
     )
 }
